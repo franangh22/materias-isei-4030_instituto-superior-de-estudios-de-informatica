@@ -1,0 +1,360 @@
+{
+	"info": {
+		"_postman_id": "635bf515-063e-4d4a-9569-9ab5fff0e87f",
+		"name": "localHost-Historias-Clinicas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27289317"
+	},
+	"item": [
+		{
+			"name": "Historia Clinica",
+			"item": [
+				{
+					"name": "Nueva historia clinica",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PacienteId\":2,\r\n    \"Observaciones\":\"vagancia\",\r\n    \"NombreEstudio\": \"vaguitis\",\r\n    \"Diagnostico\":\"cansancio\",\r\n    \"PatologiaATratar\":\"narcolepsia\",\r\n    \"Medicamentos\":\"coca-cola\",\r\n    \"TipoEventoId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/Farruggia/isei-2023-historias-clinicas/acciones/historiasClinicas/nuevo.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Farruggia",
+								"isei-2023-historias-clinicas",
+								"acciones",
+								"historiasClinicas",
+								"nuevo.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Historia clinica por paciente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost/Farruggia/isei-2023-historias-clinicas/acciones/historiasClinicas/paciente.php?idpaciente=2",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Farruggia",
+								"isei-2023-historias-clinicas",
+								"acciones",
+								"historiasClinicas",
+								"paciente.php"
+							],
+							"query": [
+								{
+									"key": "idpaciente",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Historia clinica por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/Farruggia/isei-2023-historias-clinicas/acciones/historiasClinicas/consultar.php?Id=3",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Farruggia",
+								"isei-2023-historias-clinicas",
+								"acciones",
+								"historiasClinicas",
+								"consultar.php"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Paciente",
+			"item": [
+				{
+					"name": "Paciente por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/Farruggia/isei-2023-historias-clinicas/acciones/pacientes/consultar.php?Id=1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Farruggia",
+								"isei-2023-historias-clinicas",
+								"acciones",
+								"pacientes",
+								"consultar.php"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nuevo paciente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"Pepe\",\r\n    \"Apellido\":\"Pepito\",\r\n    \"Dni\":\"1122233\",\r\n    \"Email\":\"pepe@test.ts\",\r\n    \"Clave\":\"Mememe\",\r\n    \"GrupoSanguineo\":\"B +\",\r\n    \"ObraSocialId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/Farruggia/isei-2023-historias-clinicas/acciones/pacientes/nuevo.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Farruggia",
+								"isei-2023-historias-clinicas",
+								"acciones",
+								"pacientes",
+								"nuevo.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/Farruggia/isei-2023-historias-clinicas/acciones/pacientes/consultarTodos.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Farruggia",
+								"isei-2023-historias-clinicas",
+								"acciones",
+								"pacientes",
+								"consultarTodos.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Obra social",
+			"item": [
+				{
+					"name": "Obras sociales activas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/Farruggia/isei-2023-historias-clinicas/acciones/obrasSociales/consultarActivas.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Farruggia",
+								"isei-2023-historias-clinicas",
+								"acciones",
+								"obrasSociales",
+								"consultarActivas.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obra social por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/Farruggia/isei-2023-historias-clinicas/acciones/obrasSociales/consultar.php?Id=2",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Farruggia",
+								"isei-2023-historias-clinicas",
+								"acciones",
+								"obrasSociales",
+								"consultar.php"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nueva obra social",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Descripcion\":\"Ros\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/Farruggia/isei-2023-historias-clinicas/acciones/obrasSociales/nuevo.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Farruggia",
+								"isei-2023-historias-clinicas",
+								"acciones",
+								"obrasSociales",
+								"nuevo.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tipo evento",
+			"item": [
+				{
+					"name": "Tipo evento por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/Farruggia/isei-2023-historias-clinicas/acciones/tiposEventos/consultar.php?Id=2",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Farruggia",
+								"isei-2023-historias-clinicas",
+								"acciones",
+								"tiposEventos",
+								"consultar.php"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Tipos eventos activos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/Farruggia/isei-2023-historias-clinicas/acciones/tiposEventos/consultarActivos.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Farruggia",
+								"isei-2023-historias-clinicas",
+								"acciones",
+								"tiposEventos",
+								"consultarActivos.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\":\"alumno@alumno.com\",\r\n    \"Clave\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/Farruggia/isei-2023-historias-clinicas/acciones/usuarios/login.php",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Farruggia",
+						"isei-2023-historias-clinicas",
+						"acciones",
+						"usuarios",
+						"login.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
