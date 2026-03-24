@@ -16,6 +16,34 @@
 
 <p align="left">Cada carpeta corresponde a una materia y contiene uno o más proyectos realizados durante la misma:</p>
 
+```
+Root/
+├── Desarrollo-de-Sistemas/
+│    ├── <aqui el contenido>/
+│    └── <aqui el contenido>/
+│
+│
+├── Gestion-de-Software-2/
+│    ├── <aqui el contenido>/
+│    └── <aqui el contenido>/
+│
+│
+├── Desarrolo-de-Sistemas-Web/
+│      ├── <aqui el contenido>/
+│      └── <aqui el contenido>/
+│
+│
+├── Practica-Profesionalizante-1/
+│         ├── <aqui el contenido>/
+│         └── <aqui el contenido>/
+│
+│
+├── Others/ (Incluye proyectos y practicas)
+│         ├── <aqui el contenido>/
+│         └── <aqui el contenido>/
+│
+│
+```
 ###
 
 <h2 align="left">🧠 Contenidos</h2>
